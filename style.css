@@ -1,0 +1,748 @@
+*{
+    box-sizing: border-box;
+    font-family:'Mukta', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    position: relative;
+    margin: auto;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: #fff;
+    height: 80px;
+    box-shadow: 0px 0px 30px rgba(114, 114, 114, 0.219);
+    z-index: 10;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    margin: auto;
+    position: relative;
+}
+
+.space{
+    height: 90px;
+}
+
+.img-nav{
+    display: none;
+}
+
+.logo{
+    /* background: url("Myntra-logo.png") no-repeat center center; */
+    width: 70px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+.logo img{
+    width: 60px;
+    position: relative;
+}
+
+#category{
+    display: flex;
+    /* height: 100%; */
+    align-items: center;
+
+}
+#category li{
+    /* display: block; */
+    padding: 0px 17px 0px;
+    /* height: 100%; */
+}
+#category .list-container{
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+#category .list-container:hover{
+    border-bottom: 3px solid ;
+}
+ul li{
+    list-style: none;
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f6;
+    padding: 0 0 0 8px;
+    border-radius: 5px;
+    position: relative;
+}
+#search-bar span{
+    color: #999;
+    margin-top: 3px;
+    margin-right: 3px;
+    
+}
+#search-bar input{
+    max-width: 100%;
+    background-color: #f5f5f6;
+    border: none;
+    padding: 8px 10px;
+    
+}
+#search-bar input:focus{
+    /* border: #f5f5f6 solid 1px; */
+    outline: none;
+    /* background-color: #f5f5f6; */
+    background-color: #fff;
+}
+
+.side-list ul{
+    display: flex;
+}
+
+.side-list ul li:first-child{
+    display: none;
+}
+
+.side-list ul li:nth-child(2){
+    display: none;
+}
+
+
+.side-list ul li{
+    padding: 0px 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.msg img:last-child{
+    display: none;
+}
+
+.msg img{
+    width: 100%;
+    padding: 20px;
+}
+
+/* .side-list ul li .side-list-logo i{ }*/
+
+.side-list ul li .side-list-logo img{
+    position: relative;
+    width: 20px;
+    top: 4px;
+}
+
+.mob-show{
+    display: none;
+}
+
+.mySlides img{
+    vertical-align: middle;
+}
+
+/* Slideshow-container */
+.slideshow-container{
+    max-width: 10000px;
+    margin: auto;
+    position:relative;
+    
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #717171;
+  }
+
+/* Fading Animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.9s;
+    animation-name: fade;
+    animation-duration: 1.9s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+
+.donate{
+      width: 100%;
+      margin: 10px;
+      position: relative;
+}
+
+  .donate img{
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+
+  .banner-title h3{
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 5px;
+    color: #3e4152;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .container-deals{
+      display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      padding: 30px;
+      justify-content: space-between;
+  }
+
+  .container-deals img{
+      max-width: 280px;
+      transition: 0.8s;
+  }
+
+  .container-deals img:hover{
+      transform: scale(1) translateY(-10px)
+  }
+
+  /* Footer */
+  footer{
+      background: #FAFBFC;
+      margin-top: 20px;
+      padding: 20px 230px;
+      color: #696b79;
+      
+  }
+
+  .column-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  footer a{
+      color: #696b79;
+      text-decoration: none;
+  }
+
+  footer h4{
+      text-transform: uppercase;
+      /* letter-spacing: 3px; */
+      margin-bottom: 10px;
+  }
+
+  footer img{
+      width: 150px;
+  }
+
+
+  @media (max-width: 1200px) {
+    footer{
+        background: #FAFBFC;
+        margin-top: 20px;
+        padding: 20px 150px;
+        color: #696b79;
+    }
+  }
+
+  @media (max-width: 950px){
+    .side-list ul li:first-child{
+        padding: 0px 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #search-bar{
+        display: none;
+    }
+
+    .msg img{
+        width: 100%;
+        margin:auto;
+        object-fit:contain;
+        padding: 20px;
+    }
+
+    .banner-title h3{
+        font-size: 1.6em;
+      }
+
+    .dot{
+        width: 8px;
+        height: 8px;
+    }
+
+    .container-deals{
+        display: flex;
+        position: relative;
+        /* flex-wrap: wrap; */
+        padding: 30px;
+        justify-content: space-between;
+    }
+
+    .container-deals img{
+        max-width: 280px;
+        transition: 0.8s;
+    }
+
+  }
+
+  @media (max-width: 900px){
+    .side-list ul li:first-child{
+        padding: 0px 17px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #search-bar{
+        display: none;
+    }
+
+    .msg img{
+        width: 100%;
+        margin:auto;
+        object-fit:contain;
+        padding: 20px;
+    }
+
+    .banner-title h3{
+        font-size: 1.6em;
+      }
+
+    .dot{
+        width: 8px;
+        height: 8px;
+    }
+
+    .container-deals{
+        display: flex;
+        position: relative;
+        /* flex-wrap: wrap; */
+        padding: 30px;
+        justify-content: space-around;
+    }
+
+    .container-deals img{
+        max-width: 450px;
+        transition: 0.8s;
+    }
+
+    .brands img{
+        max-width: 250px;
+    }
+
+    footer{
+        background: #FAFBFC;
+        margin-top: 20px;
+        padding: 20px 160px;
+        color: #696b79;
+        
+    }
+
+  }
+
+  @media (max-width: 850px){
+
+    /* navbar and menu */
+      #category{
+          display: none;
+          justify-content: space-between;
+          width: 100%;
+      }
+
+      .img-nav{
+          display: block;
+          width: 90%;
+          margin: auto;
+          position: relative;
+      }
+
+      .img-nav ul{
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          justify-content: space-between;
+      }
+
+      .img-nav ul li img{
+          width: 80px;
+          margin: auto;
+    }
+
+    /* Message from CEO */
+    .msg img:first-child{
+        display: none;
+    }
+
+    .msg img:last-child{
+        display: block;
+    }
+
+    /* Slide Show */
+    .lap-show{
+        display: none;
+    }
+
+    .mob-show{
+        display: block;
+    }
+
+    /* Donate Img */
+    .donate{
+        display: none;
+    }
+
+    /* Brands */
+    .container-deals{
+        display: flex;
+        position: relative;
+        /* flex-wrap: wrap; */
+        padding: 30px;
+        justify-content: space-around;
+    }
+
+    .container-deals img{
+        max-width: 450px;
+        transition: 0.8s;
+    }
+
+    .brands img{
+        max-width: 250px;
+    }
+
+    /* footer */
+    footer{
+        padding: 0px 100px;
+    }
+
+    .footer-column h4{
+        font-size: 0.9em;
+    }
+
+    .footer-column img{
+        width: 110px;
+
+    }
+  }
+
+  @media (max-width: 450px){
+
+    /* Logo */
+    .logo{
+        height: 100%;
+    }
+
+    /* navbar and menu */
+
+    #navbar{
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .logo a img{
+        width: 40px;
+    }
+
+    #category{
+          display: none;
+          justify-content: space-between;
+          width: 100%;
+    }
+
+    .side-list span{
+        font-size: 0.7em;
+    }
+
+    .side-list span .search{
+          display: none;
+    }
+
+    .side-list ul li:first-child{
+        display: none;
+    }
+
+    .side-list ul li:nth-child(2){
+        display: block;
+    }
+
+    .side-list ul li{
+        padding: 0px 10px;
+    }
+
+    .far{
+          display: none;
+    }
+
+    .side-list-logo img{
+          display: none;
+    }
+
+    /* space */
+    .space{
+        height: 70px;
+    }
+
+    /* img nav */
+
+    .img-nav{
+          display: block;
+          width: 90%;
+          margin: auto;
+          position: relative;
+    }
+
+      .img-nav ul{
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          justify-content: space-between;
+      }
+
+      .img-nav ul li img{
+          width: 70px;
+          margin: auto;
+    }
+
+    
+
+    /* Message from CEO */
+    .msg img:first-child{
+        display: none;
+    }
+
+    .msg img:last-child{
+        display: block;
+    }
+
+    /* Slide Show */
+    .lap-show{
+        display: none;
+    }
+
+    .mob-show{
+        display: block;
+    }
+
+    /* Donate Img */
+    .donate{
+        display: none;
+    }
+
+    /* Brands */
+    .banner-title h3{
+        font-size: 1.1em;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .container-deals{
+        display: flex;
+        position: relative;
+        /* flex-wrap: wrap; */
+        padding: 30px;
+        justify-content: space-around;
+    }
+
+    .container-deals img{
+        max-width: 450px;
+        transition: 0.8s;
+    }
+
+    .brands img{
+        max-width: 180px;
+    }
+
+    /* footer */
+    footer{
+        padding: 0px 30px;
+    }
+
+    h4{
+        font-size: 0.8em;
+    }
+
+    .footer-column img{
+        width: 80px;
+    }
+
+    footer p, footer a{
+        font-size: 0.7em;
+    }
+
+
+  }
+
+  @media (max-width: 350px){
+
+    /* Logo */
+    .logo{
+        height: 100%;
+    }
+
+    /* navbar and menu */
+
+    #navbar{
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .logo a img{
+        width: 40px;
+    }
+
+    #category{
+          display: none;
+          justify-content: space-between;
+          width: 100%;
+    }
+
+
+    .far{
+          display: none;
+    }
+
+    .side-list-logo img{
+          display: none;
+    }
+
+    /* space */
+    .space{
+        height: 60px;
+    }
+
+    /* img nav */
+
+    .img-nav{
+          display: block;
+          width: 85%;
+          margin: auto;
+          position: relative;
+    }
+
+      .img-nav ul{
+          display: flex;
+          align-items: center;
+          justify-items: center;
+          justify-content: space-between;
+      }
+
+      .img-nav ul li img{
+          width: 40px;
+          margin: auto;
+    }
+
+    
+
+    /* Message from CEO */
+    .msg img:first-child{
+        display: none;
+    }
+
+    .msg img:last-child{
+        display: block;
+    }
+
+    /* Slide Show */
+    .lap-show{
+        display: none;
+    }
+
+    .mob-show{
+        display: block;
+    }
+
+    /* Donate Img */
+    .donate{
+        display: none;
+    }
+
+    /* Brands */
+    .container-deals{
+        display: flex;
+        position: relative;
+        /* flex-wrap: wrap; */
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    .container-deals img{
+        max-width: 200px;
+        transition: 0.8s;
+        width: 100%;
+    }
+
+    .brands img{
+        max-width: 200px;
+        width: 100%;
+    }
+
+    /* footer */
+    footer{
+        padding: 0px 10px 50px 10px;
+    }
+
+    footer h4{
+        font-size: 0.4em;
+        margin-bottom: 0px;
+        margin-top: 15px;
+    }
+
+    .footer-column {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-column h4{
+        font-size: 0.5em;
+        margin-bottom: 0px;
+        margin-top: 15px;
+    }
+
+    .footer-column img{
+        width: 50px;
+    }
+
+    footer p, footer a{
+        font-size: 0.4em;
+    }
+
+    .column-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+  }
+  }
