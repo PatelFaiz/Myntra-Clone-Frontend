@@ -139,7 +139,6 @@ ul li{
     padding: 20px;
 }
 
-/* .side-list ul li .side-list-logo i{ }*/
 
 .side-list ul li .side-list-logo img{
     position: relative;
@@ -467,8 +466,9 @@ ul li{
     /* navbar and menu */
 
     #navbar{
-        height: 50px;
+        height: 60px;
         justify-content: space-between;
+        padding: 0 10px 0px 5px;
     }
 
     .logo a img{
@@ -578,6 +578,7 @@ ul li{
     .container-deals img{
         max-width: 450px;
         transition: 0.8s;
+        padding: 10px 10px;
     }
 
     .brands img{
